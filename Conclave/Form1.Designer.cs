@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnGerenciar = new System.Windows.Forms.Button();
-            this.btn2 = new System.Windows.Forms.Button();
+            this.btnVotar = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -44,15 +44,16 @@
             this.btnGerenciar.UseVisualStyleBackColor = true;
             this.btnGerenciar.Click += new System.EventHandler(this.btnGerenciar_Click);
             // 
-            // btn2
+            // btnVotar
             // 
-            this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.Location = new System.Drawing.Point(26, 142);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(188, 85);
-            this.btn2.TabIndex = 1;
-            this.btn2.Text = "Votar";
-            this.btn2.UseVisualStyleBackColor = true;
+            this.btnVotar.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVotar.Location = new System.Drawing.Point(26, 142);
+            this.btnVotar.Name = "btnVotar";
+            this.btnVotar.Size = new System.Drawing.Size(188, 85);
+            this.btnVotar.TabIndex = 1;
+            this.btnVotar.Text = "Votar";
+            this.btnVotar.UseVisualStyleBackColor = true;
+            this.btnVotar.Click += new System.EventHandler(this.btnVotar_Click);
             // 
             // btn3
             // 
@@ -70,7 +71,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(244, 373);
             this.Controls.Add(this.btn3);
-            this.Controls.Add(this.btn2);
+            this.Controls.Add(this.btnVotar);
             this.Controls.Add(this.btnGerenciar);
             this.Name = "Form1";
             this.Text = "Conclave";
@@ -81,7 +82,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnGerenciar;
-        private System.Windows.Forms.Button btn2;
+        private System.Windows.Forms.Button btnVotar;
         private System.Windows.Forms.Button btn3;
     }
 }

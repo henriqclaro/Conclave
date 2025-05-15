@@ -30,5 +30,11 @@ namespace Conclave
         {
             this.papaveis = papaveis;
         }
+
+        private void btnVotar_Click(object sender, EventArgs e)
+        {
+            FrmVotar f = new FrmVotar(this, papaveis);
+            f.ShowDialog();
+        }
     }
 }
