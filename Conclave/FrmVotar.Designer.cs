@@ -37,6 +37,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(8, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 24);
@@ -45,6 +46,8 @@
             // 
             // lbxCardeais
             // 
+            this.lbxCardeais.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(52)))), ((int)(((byte)(53)))));
+            this.lbxCardeais.ForeColor = System.Drawing.Color.White;
             this.lbxCardeais.FormattingEnabled = true;
             this.lbxCardeais.Location = new System.Drawing.Point(12, 58);
             this.lbxCardeais.Name = "lbxCardeais";
@@ -53,6 +56,8 @@
             // 
             // btnVotar
             // 
+            this.btnVotar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnVotar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVotar.Location = new System.Drawing.Point(12, 186);
             this.btnVotar.Name = "btnVotar";
             this.btnVotar.Size = new System.Drawing.Size(195, 42);
@@ -65,11 +70,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(52)))), ((int)(((byte)(53)))));
             this.ClientSize = new System.Drawing.Size(219, 240);
             this.Controls.Add(this.btnVotar);
             this.Controls.Add(this.lbxCardeais);
             this.Controls.Add(this.label1);
             this.Name = "FrmVotar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmVotar";
             this.ResumeLayout(false);
             this.PerformLayout();

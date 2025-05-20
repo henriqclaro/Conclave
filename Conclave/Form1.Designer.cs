@@ -35,6 +35,7 @@
             // 
             // btnGerenciar
             // 
+            this.btnGerenciar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnGerenciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGerenciar.Location = new System.Drawing.Point(26, 26);
             this.btnGerenciar.Name = "btnGerenciar";
@@ -46,6 +47,7 @@
             // 
             // btnVotar
             // 
+            this.btnVotar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnVotar.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVotar.Location = new System.Drawing.Point(26, 142);
             this.btnVotar.Name = "btnVotar";
@@ -57,6 +59,7 @@
             // 
             // btn3
             // 
+            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3.Location = new System.Drawing.Point(26, 256);
             this.btn3.Name = "btn3";
@@ -69,11 +72,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(52)))), ((int)(((byte)(53)))));
             this.ClientSize = new System.Drawing.Size(244, 373);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btnVotar);
             this.Controls.Add(this.btnGerenciar);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Conclave";
             this.ResumeLayout(false);
 
