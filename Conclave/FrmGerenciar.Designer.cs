@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.dgvPapaveis = new System.Windows.Forms.DataGridView();
-            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.btnAdicionar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPapaveis)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,12 +49,6 @@
             this.dgvPapaveis.ReadOnly = true;
             this.dgvPapaveis.Size = new System.Drawing.Size(395, 399);
             this.dgvPapaveis.TabIndex = 0;
-            // 
-            // Nome
-            // 
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            this.Nome.ReadOnly = true;
             // 
             // label1
             // 
@@ -81,9 +75,9 @@
             // 
             this.btnAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdicionar.Location = new System.Drawing.Point(539, 113);
+            this.btnAdicionar.Location = new System.Drawing.Point(490, 183);
             this.btnAdicionar.Name = "btnAdicionar";
-            this.btnAdicionar.Size = new System.Drawing.Size(147, 55);
+            this.btnAdicionar.Size = new System.Drawing.Size(177, 55);
             this.btnAdicionar.TabIndex = 3;
             this.btnAdicionar.Text = "&Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = true;
@@ -93,12 +87,19 @@
             // 
             this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.Location = new System.Drawing.Point(539, 369);
+            this.btnExcluir.Location = new System.Drawing.Point(490, 260);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(147, 55);
+            this.btnExcluir.Size = new System.Drawing.Size(177, 55);
             this.btnExcluir.TabIndex = 4;
             this.btnExcluir.Text = "E&xcluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
+            // Nome
+            // 
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            this.Nome.ReadOnly = true;
             // 
             // FrmGerenciar
             // 

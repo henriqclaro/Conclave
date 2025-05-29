@@ -30,6 +30,7 @@ namespace Conclave
 
         void Atualizar()
         {
+            dgvPapaveis.Rows.Clear();
             for (int i = 0; i < Functions.Lenght(papaveis); i++)
             {
                 DataGridViewRow linha = new DataGridViewRow();
@@ -37,6 +38,7 @@ namespace Conclave
                 linha.Cells[0].Value = papaveis[i][0];
                 dgvPapaveis.Rows.Add(linha);
             }
+            txtNome.Text = "";
         }
 
         private void btnAdicionar_Click(object sender, EventArgs e)
@@ -61,9 +63,32 @@ namespace Conclave
             }
 
             papaveis[Functions.Lenght(papaveis)] = new string[] { nome, "0"};
-            MessageBox.Show("Adicionado.");
-            txtNome.Text = "";
+
             Atualizar();
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            if (dgvPapaveis.SelectedCells.Count == 0)
+            {
+                MessageBox.Show("Selecione um papável para excluir.");
+                return;
+            }
+
+            string nome = dgvPapaveis.SelectedCells[0].Value.ToString();
+            int indice = Functions.Buscar(papaveis, nome);
+
+            DialogResult r = MessageBox.Show($"Tem certeza que deseja excluir {papaveis[indice][0]}?", "Confirmação", MessageBoxButtons.YesNo);
+            if (r == DialogResult.Yes)
+            {
+                for (int i = indice; i < Functions.Lenght(papaveis) - 1; i++)
+                {
+                    papaveis[i] = papaveis[i + 1];
+                }
+                papaveis[Functions.Lenght(papaveis) - 1] = null;
+                
+                Atualizar();
+            }
         }
     }
 }

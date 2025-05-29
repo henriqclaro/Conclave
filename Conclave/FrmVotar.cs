@@ -33,7 +33,7 @@ namespace Conclave
         {
             if (lbxCardeais.SelectedItems.Count != 1)
             {
-                MessageBox.Show("Selecione apenas um cardeal.");
+                MessageBox.Show("Selecione um cardeal.");
                 return;
             }
 
