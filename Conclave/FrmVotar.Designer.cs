@@ -52,7 +52,7 @@
             this.lbxCardeais.Location = new System.Drawing.Point(12, 58);
             this.lbxCardeais.Name = "lbxCardeais";
             this.lbxCardeais.Size = new System.Drawing.Size(195, 95);
-            this.lbxCardeais.TabIndex = 1;
+            this.lbxCardeais.TabIndex = 0;
             // 
             // btnVotar
             // 
@@ -61,8 +61,8 @@
             this.btnVotar.Location = new System.Drawing.Point(12, 186);
             this.btnVotar.Name = "btnVotar";
             this.btnVotar.Size = new System.Drawing.Size(195, 42);
-            this.btnVotar.TabIndex = 2;
-            this.btnVotar.Text = "Votar";
+            this.btnVotar.TabIndex = 1;
+            this.btnVotar.Text = "&Votar";
             this.btnVotar.UseVisualStyleBackColor = true;
             this.btnVotar.Click += new System.EventHandler(this.btnVotar_Click);
             // 

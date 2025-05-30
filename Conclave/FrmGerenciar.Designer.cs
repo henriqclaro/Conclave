@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.dgvPapaveis = new System.Windows.Forms.DataGridView();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.btnAdicionar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
-            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPapaveis)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,6 +49,12 @@
             this.dgvPapaveis.ReadOnly = true;
             this.dgvPapaveis.Size = new System.Drawing.Size(395, 399);
             this.dgvPapaveis.TabIndex = 0;
+            // 
+            // Nome
+            // 
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            this.Nome.ReadOnly = true;
             // 
             // label1
             // 
@@ -69,7 +75,7 @@
             this.txtNome.Location = new System.Drawing.Point(525, 64);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(180, 29);
-            this.txtNome.TabIndex = 2;
+            this.txtNome.TabIndex = 0;
             // 
             // btnAdicionar
             // 
@@ -78,7 +84,7 @@
             this.btnAdicionar.Location = new System.Drawing.Point(490, 183);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(177, 55);
-            this.btnAdicionar.TabIndex = 3;
+            this.btnAdicionar.TabIndex = 1;
             this.btnAdicionar.Text = "&Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = true;
             this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
@@ -90,16 +96,10 @@
             this.btnExcluir.Location = new System.Drawing.Point(490, 260);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(177, 55);
-            this.btnExcluir.TabIndex = 4;
+            this.btnExcluir.TabIndex = 2;
             this.btnExcluir.Text = "E&xcluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
-            // 
-            // Nome
-            // 
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            this.Nome.ReadOnly = true;
             // 
             // FrmGerenciar
             // 
